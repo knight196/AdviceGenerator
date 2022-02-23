@@ -1,0 +1,90 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #323a49;
+}
+
+.card {
+  background: #3e495b;
+  height: 300px;
+  width: 400px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.card button {
+  position: absolute;
+  right: 50%;
+  left: 43%;
+  bottom: -30px;
+  border: none;
+  background: #52ffa8;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px 0 #52ffa8;
+          box-shadow: 0 0 10px 0 #52ffa8;
+}
+
+.card .advice {
+  text-align: center;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 20px;
+}
+
+.card h5 {
+  color: white;
+  height: 100px;
+  font-size: 20px;
+}
+
+.card p {
+  margin: 20px auto;
+  width: 200px;
+  color: #52ffa8;
+}
+
+.card .img img {
+  width: 100%;
+}
+
+.card img:nth-child(2) {
+  display: none;
+}
+
+@media (min-width: 1020px) {
+  .img img:nth-child(2) {
+    display: block;
+  }
+  .img img:nth-child(1) {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
