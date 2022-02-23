@@ -25,21 +25,21 @@ body {
 
 .card {
   background: #3e495b;
-  height: 300px;
-  width: 400px;
+  height: 50%;
+  width: 100%;
   position: relative;
   border-radius: 10px;
 }
 
 .card button {
   position: absolute;
-  right: 50%;
-  left: 43%;
+  left: 40%;
   bottom: -30px;
   border: none;
   background: #52ffa8;
   border-radius: 50%;
-  padding: 20px;
+  width: 20%;
+  height: 20%;
   cursor: pointer;
   -webkit-box-shadow: 0 0 10px 0 #52ffa8;
           box-shadow: 0 0 10px 0 #52ffa8;
@@ -79,12 +79,23 @@ body {
   display: none;
 }
 
+@media (min-width: 720px) {
+  .card {
+    width: 50%;
+  }
+}
+
 @media (min-width: 1020px) {
   .img img:nth-child(2) {
     display: block;
   }
   .img img:nth-child(1) {
     display: none;
+  }
+  .card button {
+    width: 15%;
+    height: 30%;
+    left: 43%;
   }
 }
 /*# sourceMappingURL=style.css.map */
